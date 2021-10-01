@@ -1,8 +1,7 @@
 elementos =[1,2,3,4,5,6,7,8]
 
-pares =[]
-for i in elementos:
-    if(i % 2 ==0):
-        pares.append(i)
+def es_par(n):
+    return n%2 ==0
+pares = list(filter(es_par,elementos))
 
 print(pares)
